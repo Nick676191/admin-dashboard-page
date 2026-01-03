@@ -4,7 +4,7 @@ body {
     overflow: hidden;
     height: 100vh;
     display: grid;
-    grid-template: 1fr 4fr / 1fr 3.5fr;
+    grid-template: 1fr 6fr / 1fr 3.5fr;
 }
 
 .header {
@@ -39,8 +39,16 @@ form.bar {
     flex: 1;
 }
 
-.profile-btns {
+/* .profile-btns {
     display: flex;
+} */
+
+.profile-btns > ul {
+    display: flex;
+}
+
+.profile-btns li {
+    text-decoration: none;
 }
 
 .sidebar {
