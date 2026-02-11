@@ -21,7 +21,7 @@ body {
 
 .search {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
 }
 
@@ -45,6 +45,7 @@ form.bar {
     background-color: #e2e2e2;
     border-radius: 20px;
     font-size: 20px;
+    padding: 0 1rem;
     flex: auto;
 }
 
@@ -78,6 +79,53 @@ li img {
 
 li p {
     margin: 0;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.profile-stuff {
+    display: flex;
+    gap: 1rem;
+    grid-area: 1 / 1 / 2 / 2;
+    padding: 0 1.75rem;
+}
+
+.profile-stuff img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.top-message {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.bot-message {
+    font-size: 1.5rem;
+}
+
+.posting-buttons {
+    display: flex;
+    grid-area: 1 / 2 / 2 / 3;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 6rem;
+}
+
+.posting-buttons button {
+    border: none;
+    height: auto;
+    background-color: #4972d9;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 0.5rem 0;
+    width: 5rem;
+    font-weight: 800;
 }
 
 .sidebar {
