@@ -12,11 +12,15 @@ body {
     grid-template-rows: auto 1fr;
 }
 
+/* use position relative and the z-index to show the box-shadow */
 .header {
     background-color: #ffffff;
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0.1rem 0.1rem 0.25rem gray;
 }
 
 .search {
@@ -85,6 +89,7 @@ li p {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
+    padding-right: 1rem;
 }
 
 .profile-stuff {
@@ -113,8 +118,8 @@ li p {
     display: flex;
     grid-area: 1 / 2 / 2 / 3;
     align-items: center;
-    justify-content: space-between;
-    padding-right: 6rem;
+    justify-content: flex-start;
+    gap: 3rem;
 }
 
 .posting-buttons button {
@@ -162,6 +167,21 @@ li p {
 }
 
 .main-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     background-color: #e0e0e0;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.projects {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.announcements {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.trending {
     grid-area: 2 / 2 / 3 / 3;
 }
